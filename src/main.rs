@@ -29,7 +29,7 @@ struct VideosListProps {
 #[function_component(VideosList)]
 fn videos_list(VideosListProps { videos, on_click }: &VideosListProps) -> Html {
     let on_click = on_click.clone();
-    videos.iter().map(|video| {
+    videos.iter().map(|video|{
         let on_video_select = {
                          let on_click = on_click.clone();
                          let video = video.clone();
